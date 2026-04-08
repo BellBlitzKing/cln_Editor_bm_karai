@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <meta
+      name="description"
+      content="Create your tile map with this online Tile Map Editor"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="module/TilemapEditor/styles.css"
+    />
+
+    <link rel="manifest" href="manifest.webmanifest" />
+    <meta name="theme-color" content="#317EFB" />
+    <link rel="apple-touch-icon" href="/icon.png" />
+    <link rel="stylesheet" type="text/css" href="module/main.css" />
+
+    <title>TileMapEditor.js</title>
+  </head>
+  <body>
+    <div id="tileMapEditor"></div>
+    <button id="addPwaBtn">🍰 Install pwa</button>
+    <div id="snackbar">
+      A new version of this app is available.
+      <a id="reload">Click here to update.</a>
+    </div>
+
+    <script type="module" src="importers/tiled.js"></script>
+    <script type="module" src="module/index.js"></script>
+  </body>
+</html>
